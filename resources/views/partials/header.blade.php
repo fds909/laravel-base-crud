@@ -23,7 +23,7 @@
               <a href="">CHARACTERS</a>
             </li>
             <li>
-              <a href=" {{ route('home') }} ">COMICS</a>
+              <a href="{{ route('comics.index') }}">COMICS</a>
             </li>
             <li>
               <a href="">MOVIES</a>

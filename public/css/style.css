@@ -79,3 +79,8 @@ nav {
     color: #464646;
     font-size: 18px;
 }
+
+/* MAIN */
+.cover {
+    height: 150px;
+}
