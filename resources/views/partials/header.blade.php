@@ -20,13 +20,10 @@
         <nav>
           <ul>
             <li>
-              <a href="">CHARACTERS</a>
-            </li>
-            <li>
               <a href="{{ route('comics.index') }}">COMICS</a>
             </li>
             <li>
-              <a href="">MOVIES</a>
+              <a href="{{ route('comics.create') }}">CREA NUOVO <i class="fa-solid fa-circle-plus plus-icon"></i></a>
             </li>
             <li>
               <a href="">TV</a>

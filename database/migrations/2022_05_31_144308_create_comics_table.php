@@ -20,7 +20,7 @@ class CreateComicsTable extends Migration
             $table->string('thumb');
             $table->decimal('price', 5, 2);
             $table->string('series');
-            $table->date('sale_date');
+            $table->date('sale_date')->nullable();
             $table->enum('type', ['comic book', 'graphic novel']);
             $table->timestamps();
         });
