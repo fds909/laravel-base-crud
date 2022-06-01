@@ -31,7 +31,7 @@
 
                     <div class="col-4">
                         <label for="sale-date" class="form-label">Sale Date</label>
-                        <input type="date" id="sale-date" class="form-control" name="sale-date" required>
+                        <input type="date" id="sale-date" class="form-control" name="sale_date" required>
                     </div>
 
                     <div class="col-4">
