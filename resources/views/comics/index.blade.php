@@ -15,6 +15,7 @@
                 <th scope="col">Serie</th>
                 <th scope="col">Data di uscita</th>
                 <th scope="col">Tipo</th>
+                <th scope="col">Actions</th>
             </tr>
             </thead>
 
@@ -28,6 +29,9 @@
                 <td>{{ $comic->series }}</td>
                 <td>{{ $comic->sale_date }}</td>
                 <td>{{ $comic->type }}</td>
+                <td>
+                    <a href=" {{ route('comics.show', $comic->id) }} " type="button" class="btn btn-primary">Show</a>
+                </td>
             </tr>
         @empty
             <h2>Non ci sono fumetti da mostrare</h2>
