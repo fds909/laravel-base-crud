@@ -5,6 +5,12 @@
 @section('content')
     <h1 class="text-center">Comics</h1>
 
+    @if (session('message'))
+        <div class="alert alert-success">
+            {{ session('message') }}
+        </div>
+    @endif
+
     <div class="container">
         <table class="table">
             <thead>
@@ -32,7 +38,7 @@
                 <td>
                     <a href=" {{ route('comics.show', $comic->id) }} " type="button" class="btn btn-primary">Show</a>
                     <a href=" {{ route('comics.edit', $comic->id) }} " type="button" class="btn btn-warning">Edit</a>
-                    
+
                     {{-- Il delete richiede un form con metodo apposito --}}
                     <form action="{{ route('comics.destroy', $comic->id) }}" method="POST">
                         @csrf
